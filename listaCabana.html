@@ -17,11 +17,41 @@
         <h1 class="text-center fst-italic" style="color: grey;">Cabañas</h1>
     </div>
     <br>
-    <div class="d-grid gap-2 d-md-flex justify-content-md-center" >
-        <a class="btn btn-primary" href="index.html">Regresar</a>
-        <button class="btn btn-primary" type="button">Nuevo Registro</button>
+    <div class="d-grid gap-3 d-md-flex justify-content-md-center" >
+        <a class="btn btn-primary" href="index.html">Principal</a>
+        <button class="btn btn-primary" type="button" onclick="adquirirDatos();">Datos</button>
+        <button class="btn btn-primary" type="button" onclick="pagnuevoRegistro();">Nuevo Registro</button>
     </div>
     <br>
     <div id="listadatos"></div>
+    <div id="registronuevo">
+        <h3 class="text-center fst-italic" style="color: grey;">Registro de Cabañas</h3>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">id</span>
+            <input id="idcabana" type="text" class="form-control" placeholder="Ejemplo = 1" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon2">Marca</span>
+            <input id="brandcabana" type="text" class="form-control" placeholder="Escriba la marca" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon2">N.Cuartos</span>
+            <input id="roomscabana" type="text" class="form-control" placeholder="Ejemplo = 2" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon2">Categoría</span>
+            <input id="categorycabana" type="text" class="form-control" placeholder="Ejemplo = 4" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon2">Nombre</span>
+            <input id="namecabana" type="text" class="form-control" placeholder="Ejemplo = Cabaña del amor" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          </div>
+          <br>
+            <button class="btn btn-primary" type="button" onclick="agregarRegistro();">Registrar</button>
+        </div>
 </body>
 </html>
