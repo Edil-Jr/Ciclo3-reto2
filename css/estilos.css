@@ -24,10 +24,17 @@
 h1{
     color: #13D6E2;
 }
-a{color: var(--text-color)!important;
-    font-weight: 500;
+a{
+    color: #FBFEFD !important;
+    text-decoration: none !important;
+
 }
-a:hover{
+#Label-a{
+    color: var(--text-color)!important;
+    font-weight: 500;
+    
+}
+#Label-a:hover{
     color:#13D6E2 !important;
     transition:0.5s;
 }
@@ -50,3 +57,10 @@ h2{
     color: var(--title-color);
 }
 
+#registrar-cabañas{
+    width:400px ;
+}
+
+.id-mns{
+    width: 200px !important;
+}
